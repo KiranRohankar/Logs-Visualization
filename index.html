@@ -79,7 +79,22 @@
         var contents = e.target.result;
         
         $('#visualize').click(function(){
-          document.getElementById('write').innerHTML= contents; 
+          var arr  = contents.split("\n");
+          var element=document.getElementById('write');
+        //  for(var j =0;j<178;j++)
+          {
+          for(var i=0;i<arr.length;i++)
+          {
+            var myString = arr[i];
+            var myRegexp1 = /([\w+-?]*)/g;
+            var match1 = myRegexp1.exec(myString);
+            var myRegexp2 = /\[(\d{2}\/\w+\/\d{4})/g;
+            var match2 = myRegexp2.exec(myString);
+
+
+            element.innerHTML= element.innerHTML+"<br/>"+match1[1]+"              "+match2[1]; 
+          }
+          }
           $('.starter-template').toggle();
         });
   

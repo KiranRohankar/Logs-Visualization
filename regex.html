@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function cal(){
+
+		var myString = "112.206.63.104.pldt.net 112.206.63.104.pldt.net ";
+var myRegexp = /(\w+\.\w+\.\w+\.\w+)/g;
+var match = myRegexp.exec(myString);
+alert(match);	
+	}
+	
+</script>
+<input type="submit" onclick="cal()"></input>
+</body>
+</html>

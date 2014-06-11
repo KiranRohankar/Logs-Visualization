@@ -1,0 +1,18 @@
+1.Individual
+
+	a).for getting the status of the request
+	HTTP\/\d\.\d\"\s*(200|403)
+
+2.Error-log from apache2
+	a).For getting date from apache log
+	\[\s*\w{3}\s*(\w+)\s*(\d{2})\s*\d{2}:\d{2}:\d{2}\s*(\d{4})
+	b). machine IP address
+	\[\s*client\s*(\d*\.\d*\.\d*\.\d*)]
+	c).Error Message
+	\[\s*client\s*\d*\.\d*\.\d*\.\d*](.*)
+	
+
+3.dvdocs
+
+a).for getting the status of the request
+	HTTP\/\d\.\d\"\s*(200|403)
